@@ -17,9 +17,9 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body class="font-sans bg-gray-background text-gray-900 text-sm">
-<header class="flex items-center justify-between px-8 py-4">
+<header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
     <a href=""><img src="{{ asset('img/logo.svg') }}" alt="logo"></a>
-    <div class="flex items-center">
+    <div class="flex items-center mt-2 md:mt-0">
         @if (Route::has('login'))
             <div class=" px-6 py-4">
                 @auth
@@ -47,10 +47,10 @@
         </a>
     </div>
 </header>
-<main class="container mx-auto max-w-custom flex" style="max-width: 1000px">
-    <div class="w-70 mr-5 ">
+<main class="container mx-auto max-w-custom flex flex-col md:flex-row" style="max-width: 1000px">
+    <div class="w-70 md:mx-0 md:mr-5  mx-auto ">
 
-        <div class="border-2 border-blue rounded-xl mt-16 bg-white"
+        <div class=" mx-auto border-2 md:sticky md:top-8 border-blue rounded-xl mt-16 bg-white"
              style="
               border-image-source: linear-gradient(to bottom, rgba(50, 138, 241, 0.22), rgba(99, 123,255, 0));
               background-image: linear-gradient(to bottom, #ffffff, #ffffff),
@@ -111,8 +111,8 @@
     </div>
 
     </div>
-    <div class="w-175" style="max-width: 700px">
-        <nav class="text-xs nav flex item-center justify-between">
+    <div class="w-full px-2 md:px-0 md:w-175" style="max-width: 700px">
+        <nav class=" hidden md:flex text-xs nav flex item-center justify-between">
             <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
                 <li><a href="#" class="border-b-4 pb-3 border-blue">All ideas (87)</a></li>
                 <li><a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Considering
