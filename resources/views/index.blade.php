@@ -96,20 +96,26 @@
                             <div class="text-gray-900">3 Comments</div>
                         </div>
                         <div
-
+                            x-data="{ isOpen: false }"
                             class="flex mt-4 md:mt-0 items-center space-x-2 ">
                             <div
                                 class="px-4 py-2 font-bold leading-none text-center uppercase bg-gray-200 rounded-full text-xxs w-28 h-7 ">
                                 Open
                             </div>
                             <button
+                                @click="isOpen = !isOpen"
                                 class="relative px-3 py-2 transition duration-150 ease-in bg-gray-100 rounded-full hover:bg-gray-200 h-7">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-3" fill="none" viewBox="0 0 24 24"
                                      stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
                                 </svg>
-                                <ul class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
+                                <ul
+                                    x-cloak
+                                    x-show.transition.origin.top.left="isOpen"
+                                    @click.away="isOpen = false"
+                                    @keydown.escape.window="isOpen = false"
+                                    class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
                                     <li>
                                         <a href=""
                                            class="block px-5 py-3 transition duration-150 ease-in hover:bg-gray-100 ">Mark
@@ -192,19 +198,27 @@
                             <div>&middot;</div>
                             <div class="text-gray-900">3 Comments</div>
                         </div>
-                        <div class="flex mt-4 md:mt-0 items-center space-x-2 ">
+                        <div
+                            x-data="{ isOpen: false }"
+                            class="flex mt-4 md:mt-0 items-center space-x-2 ">
                             <div
                                 class="px-4 py-2 font-bold leading-none text-center uppercase rounded-full bg-yellow text-xxs w-28 h-7 ">
                                 In progress
                             </div>
                             <button
+                                @click="isOpen = !isOpen"
                                 class="relative px-3 py-2 transition duration-150 ease-in bg-gray-100 rounded-full hover:bg-gray-200 h-7">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-3" fill="none" viewBox="0 0 24 24"
                                      stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
                                 </svg>
-                                <ul class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
+                                <ul
+                                    x-cloak
+                                    x-show.transition.origin.top.left="isOpen"
+                                    @click.away="isOpen = false"
+                                    @keydown.escape.window="isOpen = false"
+                                    class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
                                     <li>
                                         <a href=""
                                            class="block px-5 py-3 transition duration-150 ease-in hover:bg-gray-100 ">Mark
@@ -273,19 +287,27 @@
                             <div>&middot;</div>
                             <div class="text-gray-900">3 Comments</div>
                         </div>
-                        <div class="flex mt-4 md:mt-0 items-center space-x-2 ">
+                        <div
+                            x-data="{ isOpen: false }"
+                            class="flex mt-4 md:mt-0 items-center space-x-2 ">
                             <div
                                 class="px-4 py-2 font-bold leading-none text-center text-white uppercase rounded-full bg-green text-xxs w-28 h-7 ">
                                 Implemented
                             </div>
                             <button
+                                @click="isOpen = !isOpen"
                                 class="relative px-3 py-2 transition duration-150 ease-in bg-gray-100 border rounded-full hover:bg-gray-200 h-7">
                                 <svg class="w-6 h-3" fill="none" viewBox="0 0 24 24"
                                      stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
                                 </svg>
-                                <ul class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
+                                <ul
+                                    x-cloak
+                                    x-show.transition.origin.top.left="isOpen"
+                                    @click.away="isOpen = false"
+                                    @keydown.escape.window="isOpen = false"
+                                    class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
                                     <li>
                                         <a href=""
                                            class="block px-5 py-3 transition duration-150 ease-in hover:bg-gray-100 ">Mark
@@ -357,19 +379,29 @@
                             <div>&middot;</div>
                             <div class="text-gray-900">3 Comments</div>
                         </div>
-                        <div class="flex mt-4 md:mt-0 items-center space-x-2 ">
+                        <div
+                            x-data="{ isOpen: false }"
+                            class="flex mt-4 md:mt-0 items-center space-x-2 ">
                             <div
                                 class="px-4 py-2 font-bold leading-none text-center text-white uppercase bg-indigo-600 rounded-full text-xxs w-28 h-7 ">
                                 Considering
                             </div>
                             <button
+
+                                @click="isOpen = !isOpen"
                                 class="relative px-3 py-2 transition duration-150 ease-in bg-gray-100 rounded-full hover:bg-gray-200 h-7">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-3" fill="none" viewBox="0 0 24 24"
                                      stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
                                 </svg>
-                                <ul class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
+                                <ul
+
+                                    x-cloak
+                                    x-show.transition.origin.top.left="isOpen"
+                                    @click.away="isOpen = false"
+                                    @keydown.escape.window="isOpen = false"
+                                    class="absolute md:ml-8 top-8 md:top-6 right-0 md:left-0 font-semibold text-left bg-white w-44 shadow-dialog rounded-xl ">
                                     <li>
                                         <a href=""
                                            class="block px-5 py-3 transition duration-150 ease-in hover:bg-gray-100 ">Mark
