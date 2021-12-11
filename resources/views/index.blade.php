@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex space-x-3 md:space-y-0 md:space-x-6 flex-col md:flex-row filters">
+    <div class="flex md:space-y-0 md:space-x-6 flex-col md:flex-row filters">
 
         <div class="w-full md:w-1/3">
             <select name="category" id="category" class="w-full px-4 py-2 border-none rounded-xl ">
@@ -41,6 +41,7 @@
     <div class="my-6 space-y-6 ideas-container">
         <div class="flex bg-white cursor-pointer idea-container rounded-xl hover:shadow-card ">
             <div class="hidden md:block  px-5 py-8 border-r border-gray-100">
+
                 <div class="text-center">
                     <div class="text-2xl font-semibold">
                         12
@@ -55,12 +56,14 @@
 
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
+            <div class=" flex flex-col md:flex-row  flex-1 px-2 py-6">
+                <div class="flex justify-center md:flex-none mx-2 md:mx-0">
+                <a href="#" >
                     <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar"
                          class="w-14 h-14 rounded-xl">
                 </a>
-                <div class="mx-4">
+                </div>
+                <div class="w-full mx-2 flex flex-col justify-between">
                     <h4 class="text-xl font-semibold mt-2 md:mt-0">
                         <a href="#" class="hover:underline">A random title can go here </a>
 
@@ -128,7 +131,7 @@
                             </button>
                         </div>
                         <div class="flex items-center md:hidden mt-4 md:mt-0">
-                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 pr-8">
+                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 md:pr-8">
                                 <div class="text-sm font-bold leading-none ">
                                     12
                                 </div>
@@ -158,12 +161,14 @@
 
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
+            <div class="flex flex-col md:flex-row     flex-1   px-2 py-6">
+                <div class="flex justify-center md:flex-none mx-2 md:mx-0">
+                <a href="#" >
                     <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar"
                          class="w-14 h-14 rounded-xl">
                 </a>
-                <div class="mx-4">
+                </div>
+                <div class="w-full mx-2 flex flex-col justify-between">
                     <h4 class="text-xl font-semibold mt-2 md:mt-0">
                         <a href="#" class="hover:underline">A random title can go here </a>
 
@@ -231,7 +236,7 @@
                             </button>
                         </div>
                         <div class="flex items-center md:hidden mt-4 md:mt-0">
-                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 pr-8">
+                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 md:pr-8">
                                 <div class="text-sm font-bold leading-none ">
                                     12
                                 </div>
@@ -261,7 +266,7 @@
                 </div>
             </div>
             <div class="flex flex-col md:flex-row flex-1 px-2 py-6">
-                <div class="flex-none mx-2 md:mx-0">
+                <div class="flex justify-center md:flex-none mx-2 md:mx-0">
                     <a href="#">
                         <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar"
                              class="w-14 h-14 rounded-xl">
@@ -414,7 +419,7 @@
                             </button>
                         </div>
                         <div class="flex items-center md:hidden mt-4 md:mt-0">
-                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 pr-8">
+                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 md:pr-8">
                                 <div class="text-sm font-bold leading-none ">
                                     12
                                 </div>
